@@ -1,0 +1,318 @@
+/* UNIVERSAL STYLE */
+
+html,body {
+    margin: 0;
+    padding: 0;
+    font-size: 16px;
+    background-color: white;
+    font-family: 'Nuosu SIL', serif;
+}
+
+/* HEADER */
+
+header {
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 100;
+}
+
+header .desktop {
+    display: flex;
+    width: auto;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    border-bottom: 1px solid  #8b0000;
+}
+#logo {
+    display: flex;
+    align-self: center;
+    height: 3.5rem;
+}
+
+.main-nav img {
+    width: 1rem;
+    padding-left: .75rem;
+}
+
+
+header nav ul {
+    display: flex; 
+    padding-left: 5rem; 
+    width: 100%;
+}
+
+nav li {
+    padding-left: 3.5rem;
+    
+}
+
+nav a {
+    vertical-align: bottom;
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+#search {
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+#basket {
+    height: 1.5rem;
+    width: 1.5rem;
+    background-color: transparent;
+}
+
+header .mobile {
+    display: none;
+  }
+
+header .tablet {
+    display: none;
+}
+
+@media only screen and (max-width: 900px) {
+    header .desktop {
+        display: none;
+    }
+    header .mobile {
+        display: none;
+    }
+    header .tablet {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        border-bottom: 1px solid #8b0000;
+        width: 100%
+ }
+  
+    header .tablet nav ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+  }
+    header .tablet li {
+    padding-left: 4rem;
+  }
+    header nav ul {
+    display: flex; 
+    padding-left: 3rem; 
+    width: 100%;
+}
+.main-nav img {
+    padding-left: 0;
+}
+#logo-medium {
+    height: 2rem;
+    width: auto;
+    padding-left: 1rem;
+}
+}
+
+@media only screen and (max-width: 720px) {
+ header .desktop {
+     display: none;
+ }
+
+ header .tablet {
+     display: none;
+ }
+ header .mobile {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 1rem;
+        border-bottom: 1px solid #8b0000;
+
+ }
+
+ header .mobile nav ul {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+
+  }
+  header .mobile li {
+    padding-left: 1rem;
+  }
+  header nav ul {
+    display: flex; 
+    padding-left: 0rem; 
+    width: 100%;
+}
+#small-logo {
+    height: 2.75rem;
+    width: 9rem;
+    padding-right: 1rem;
+    padding-left: 0rem;
+}
+#basket {
+    padding-right: 1rem;
+}
+}
+
+/* MISSION */
+
+.mission-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    background-image: url("images/sunglasses banner.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0 auto;
+}
+
+.mission {
+    margin: 0 auto;
+    color: black;
+    text-align: center;
+    width: 100%;
+    background-color: white;
+    height: auto;
+    opacity: 0.8;
+}
+
+.mission h1 {
+    font-size: 2rem;
+    font-weight: bold;
+    padding-top: 1rem;
+    padding-bottom: 0.75rem;
+    font-family: 'Nuosu SIL', serif;
+}
+
+.mission h3 {
+    font-family: 'Nuosu SIL', serif;
+    font-size: 1.5rem;
+    padding-bottom: 1.5rem;
+
+}
+@media only screen and (max-width: 720px){
+    .mission h1 {
+        font-size: 1.5rem;
+    }
+    .mission h3 {
+        font-size: 1rem;
+    }
+}
+
+/* FEATURES */
+
+.features-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    padding-bottom: 2rem;
+}
+
+.features-title {
+    font-family: 'Nuosu SIL', serif;
+    text-align: center;
+    padding-top: 3rem;
+    font-size: 2rem;
+}
+
+.features {
+    font-family: 'Nuosu SIL', serif;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 1rem 1rem;
+
+}
+
+figure {
+    text-align: center;
+    height: auto;
+    width: auto;
+}
+.caption {
+    padding-top: 1rem;
+}
+
+@media only screen and (max-width: 720px) {
+    .glasses {
+        padding-bottom: 1.5rem;
+    }
+}
+
+/* MEET THE TEAM */
+.team-section {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin: 0 auto;
+    background-image: url('images/team-background.avif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-family: 'Nuosu SIL', serif;
+}
+
+.team-title {
+    text-align: center;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    overflow: hidden;
+    flex-wrap: wrap;
+}
+
+.members {
+    padding-bottom: 1rem;
+}
+
+.members p {
+    padding-top: 0.5rem;
+}
+
+.team-section img {
+    height: 75%;
+    width: 50%;
+}
+
+/* FOOTER */
+.footer-section {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 2rem;
+    font-family: 'Nuosu SIL', serif;
+}
+.footer-info {
+    font-weight: bold;
+}
+.footer-info h2 {
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.footer-info h4 {
+    font-size: 1rem;
+    padding-bottom: 1rem;
+}
+
+.footer-info h3 {
+    font-size: 1.25rem;
+    padding-top: 2rem;
+}
